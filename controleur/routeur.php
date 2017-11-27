@@ -1,7 +1,6 @@
 <?php
 
 require_once 'controleurAuthentification.php';
-require_once 'controleurMessage.php';
 
 
 class Routeur {
@@ -12,7 +11,6 @@ class Routeur {
 
   public function __construct() {
     $this->ctrlAuthentification= new ControleurAuthentification();
-    $this->controleurMessage= new ControleurMessage();
 
     }
 
