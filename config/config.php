@@ -18,6 +18,6 @@ define("PATH_METIER",HOME_SITE."/metier");
 
 define("HOST","localhost");
 define("BD","E165199P");
-define("LOGIN","E165199P");
-define("PASSWORD","E165199P");
+define("LOGIN","E164297J");
+define("PASSWORD","E164297J");
 ?>
