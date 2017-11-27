@@ -19,25 +19,20 @@ class Routeur {
   // Traite une requête entrante
   public function routerRequete() {
 
-try{
-    if(isset($_POST["pseudo"])){
+    try{
+      if(isset($_POST["pseudo"])){
         setcookie("pseudo", $_POST["pseudo"]);
       }
-   if(isset($_POST["pseudo"]) || isset($_COOKIE["pseudo"])){
+      if(isset($_POST["pseudo"]) || isset($_COOKIE["pseudo"])){
         if(isset($_POST["message"])){
-
-              $this->controleurMessage->ajoutMessage($_POST["message"]);
+          $this->controleurMessage->ajoutMessage($_POST["message"]);//jouer
         }
-    }
-
-    else{
+      } else{
+        $this->ctrlAuthentification->accueil();
+      }
+    } catch(PDOException $e){
       $this->ctrlAuthentification->accueil();
     }
- }
-catch(PDOException $e){
-  $this->ctrlAuthentification->accueil();
-}
-
- }
+  }
 }
 ?>

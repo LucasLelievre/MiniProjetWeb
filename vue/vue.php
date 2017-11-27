@@ -8,20 +8,20 @@ require_once PATH_METIER."/Message.php";
   ?>
   <html>
     <body>
-
-
-
-        <br/>
-        <br/>
-        <form method="post" action="index.php">
+      <br/>
+      <br/>
+      <span>BONJOUR, connect toi :</span>
+      <form method="post" action="index.php">
         Pseudonyme  <input type="text" name="pseudo"/>
         </br>
         Mot de passe <input type="text" name="mdp"/>
-      </br>
-      <input type="submit" name="soumettre" value="envoyer"/>
-    </form>
-    <br/>
-  <br/>
+        </br>
+        <input type="submit" name="soumettre" value="envoyer"/>
+      </form>
+      <br/>
+      <br/>
+    </body>
+  </html>
   <?php
   }
 
