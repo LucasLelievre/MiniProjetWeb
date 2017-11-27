@@ -1,6 +1,5 @@
 <?php
 
-
   class Vue{
 
   function demandePseudo(){
@@ -25,31 +24,9 @@
   <?php
   }
 
-  function affichage($message){
-    header("Content-type: text/html; charset=utf-8");
+  function jouer($pseudo){
+    ?>Vue du jeu<?php
+  }
 
-  ?>
-  <html>
-    <body>
-      <form method="post" action="index.php">
-      Entrer un message  <input type="text" name="message"/>
-  </form>
-      <br/>
-    <br/>
-    <ol>
-      <?php
-      foreach ($message as $value) {
-        ?>
-        <li> <?php echo($value->pseudo); ?> Message : <?php echo($value->message); ?>
-        <?php
-
-      }
-      ?>
-    </ol>
-    <br/>
-  <br/>
-
-  <?php
-}
 }
 ?>

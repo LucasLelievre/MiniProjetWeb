@@ -22,9 +22,7 @@ class Routeur {
         setcookie("pseudo", $_POST["pseudo"]);
       }
       if(isset($_POST["pseudo"]) || isset($_COOKIE["pseudo"])){
-        if(isset($_POST["message"])){
-          $this->controleurMessage->ajoutMessage($_POST["message"]);//jouer
-        }
+          //$this->ctrl;//jouer
       } else{
         $this->ctrlAuthentification->accueil();
       }
